@@ -48,17 +48,21 @@
   }
   .entreprenarial {
     background-color: $primary;
-  }
-  .action {
-    background-color: $gray-700;
     color: $white;
   }
-  .forUsAll {
+  .action {
     background-color: $gray-100;
+  }
+  .forUsAll {
+    background-color: $gray-700;
+    color: $white;
   }
 
   // The about section's styles
   .about-container {
+    display: flex;
+    grid-gap: 26px;
+
     .myCard {
       border-radius: 5px;
       box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
@@ -185,6 +189,40 @@
           }
         }
       }
+    }
+
+    .accordion-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+  .projects-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 3rem auto;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        transition: all .4s ease-in-out;
+        border: 1px solid $gray-400;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+        }
+        a{
+            background-color: $primary;
+            border: none;
+            font-weight: 600;
+        }
+    }
+
+    .card-text {
+        font-size: 1rem;
     }
   }
 }

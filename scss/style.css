@@ -154,13 +154,18 @@ html {
 }
 .info-section .entreprenarial {
   background-color: #FFC000;
+  color: white;
 }
 .info-section .action {
+  background-color: #f7fafc;
+}
+.info-section .forUsAll {
   background-color: #4a5568;
   color: white;
 }
-.info-section .forUsAll {
-  background-color: #f7fafc;
+.info-section .about-container {
+  display: flex;
+  grid-gap: 26px;
 }
 .info-section .about-container .myCard {
   border-radius: 5px;
@@ -270,6 +275,35 @@ html {
 .info-section .about-container .myCard .description-enactus-emi .description-body .emi-description .learn-more-btn:hover {
   transform: translateY(-2px);
   box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .accordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-section .projects-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 3rem auto;
+  justify-content: center;
+  align-items: center;
+}
+.info-section .projects-container .card {
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #cbd5e0;
+}
+.info-section .projects-container .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .projects-container .card a {
+  background-color: #FFC000;
+  border: none;
+  font-weight: 600;
+}
+.info-section .projects-container .card-text {
+  font-size: 1rem;
 }
 
 html {
