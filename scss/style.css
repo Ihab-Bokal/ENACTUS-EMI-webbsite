@@ -1,0 +1,301 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  color: white;
+  width: 100%;
+  height: 45px;
+  background: url("../../images/Backgrounds/navbar_bg.jpg");
+  background-color: #B67929;
+  background-position: center;
+  background-size: 50%;
+  background-blend-mode: color-burn;
+}
+.navbar .navbar-btn-image::before {
+  display: none;
+}
+.navbar .navbar-logo {
+  width: 60%;
+}
+.navbar .navbar-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.navbar .navbar-btns .navbar-btn {
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  width: 180px;
+}
+
+#home:hover,
+#about:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#associationDP:hover,
+#connection {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 10px;
+  background: #FFC000;
+  transition: all 0.5s ease;
+  width: 0;
+}
+
+.navbar-btn:hover::before,
+#connection::before {
+  width: 3%;
+}
+
+.dropdown-content {
+  display: none;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin-top: 10rem;
+  margin-left: -21rem;
+  position: absolute;
+  background-color: rgba(38, 74, 119, 0.7882352941);
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border-width: 2px;
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#why_drop {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+  background-color: #f1f1f1;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-container img {
+  height: 97vh;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #1a202c;
+  background-blend-mode: color-burn;
+}
+.img-container .black-cover {
+  background-color: #1a202c;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97vh;
+}
+
+.info-section {
+  position: absolute;
+  top: 85vh;
+  display: block;
+  width: 90%;
+}
+.info-section .card {
+  border-radius: 5px;
+  font-weight: 500;
+}
+.info-section .card .card-text {
+  font-size: 1.2rem;
+}
+.info-section .card .title-line {
+  width: 80%;
+  height: 3px;
+  margin: 1rem auto;
+  background-color: #1a202c;
+}
+.info-section .entreprenarial {
+  background-color: #FFC000;
+}
+.info-section .action {
+  background-color: #4a5568;
+  color: white;
+}
+.info-section .forUsAll {
+  background-color: #f7fafc;
+}
+.info-section .about-container .myCard {
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+.info-section .about-container .myCard .about-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.info-section .about-container .myCard .about-header .about-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #1a202c;
+  text-align: center;
+  margin: 0.6rem auto;
+}
+.info-section .about-container .myCard .about-header .enactus-logo {
+  width: 80%;
+}
+.info-section .about-container .myCard .description-emi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.info-section .about-container .myCard .description-emi .emi-title {
+  width: 90%;
+  color: #2d3748;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.info-section .about-container .myCard .description-emi .description-body {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin: 2rem;
+}
+.info-section .about-container .myCard .description-emi .description-body img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description {
+  position: relative;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description .learn-more-btn {
+  display: block;
+  background-color: #FFC000;
+  position: absolute;
+  right: 35%;
+  margin-top: 0.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description .learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-enactus-emi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.info-section .about-container .myCard .description-enactus-emi .emi-title {
+  width: 90%;
+  color: #2d3748;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  margin: 2rem;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description {
+  position: relative;
+  margin: 0 1rem 2rem 0;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description .learn-more-btn {
+  display: block;
+  background-color: #FFC000;
+  position: absolute;
+  right: 35%;
+  margin-top: 0.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description .learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section {
+  background-color: #fffff0;
+  display: none;
+}
+
+.activeSection {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #FFC000;
+  margin: 2.5rem 0;
+}/*# sourceMappingURL=style.css.map */
